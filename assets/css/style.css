@@ -699,6 +699,7 @@ section {
   color: #149ddd;
 }
 
+
 .services .title {
   margin-left: 80px;
   font-weight: 700;
@@ -716,6 +717,29 @@ section {
 
 .services .description {
   margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+
+.blog .title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.blog  a {
+  color: #343a40;
+}
+
+.blog  a:hover {
+  color: #149ddd;
+}
+
+.blog .description {
+  text-align: center;
+  margin-left: px;
   line-height: 24px;
   font-size: 14px;
 }
