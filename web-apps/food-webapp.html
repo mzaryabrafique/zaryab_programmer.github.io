@@ -1,204 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>Food Order & Delivery Website</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="../assets/img/favicon.ico" rel="icon">
-    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../assets/img/favicon.ico" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
     <!-- Vendor CSS Files -->
-    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Template Main CSS File -->
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet" />
 
     <script>
-        window.callbellSettings = {
-            token: "JicDkEGALLPh73DeG2fRC1Uf"
-        };
+      window.callbellSettings = {
+        token: "JicDkEGALLPh73DeG2fRC1Uf",
+      };
     </script>
     <script>
-        (function () { var w = window; var ic = w.callbell; if (typeof ic === "function") { ic('reattach_activator'); ic('update', callbellSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Callbell = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://dash.callbell.eu/include/' + window.callbellSettings.token + '.js'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
+      (function () {
+        var w = window;
+        var ic = w.callbell;
+        if (typeof ic === "function") {
+          ic("reattach_activator");
+          ic("update", callbellSettings);
+        } else {
+          var d = document;
+          var i = function () {
+            i.c(arguments);
+          };
+          i.q = [];
+          i.c = function (args) {
+            i.q.push(args);
+          };
+          w.Callbell = i;
+          var l = function () {
+            var s = d.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src =
+              "https://dash.callbell.eu/include/" +
+              window.callbellSettings.token +
+              ".js";
+            var x = d.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+          };
+          if (w.attachEvent) {
+            w.attachEvent("onload", l);
+          } else {
+            w.addEventListener("load", l, false);
+          }
+        }
+      })();
     </script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- ======= Mobile nav toggle button ======= -->
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
     <!-- ======= Header ======= -->
     <header id="header">
-        <div class="d-flex flex-column">
-
-            <div class="profile">
-                <img src="../assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href="../index.html">M. Zaryab Rafique </a></h1>
-                <div class="social-links mt-3 text-center">
-                    <a href="https://www.linkedin.com/in/zaryab-programmer/" target="_blank" class="linkedin"><i
-                            class="bx bxl-linkedin"></i></a>
-                    <a href="https://www.instagram.com/zaryab.programmer/" target="_blank" class="instagram"><i
-                            class="bx bxl-instagram"></i></a>
-                    <a href="https://github.com/Zaryab-Programmer" target="_blank" class="github"><i
-                            class="bx bxl-github"></i></a>
-                    <a href="https://twitter.com/zaryab_rafique" class="twitter" target="_blank"><i
-                            class="bx bxl-twitter"></i></a>
-                    <a href="https://web.facebook.com/Zaryab.Programmer/" target="_blank" class="facebook"><i
-                            class="bx bxl-facebook"></i></a>
-                </div>
-            </div>
-
-            <nav id="navbar" class="nav-menu navbar">
-                <ul>
-                    <li><a href="../index.html" class="nav-link scrollto"><i class="bx bx-home"></i>
-                            <span>Home</span></a>
-                    </li>
-                    <li><a href="../index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i>
-                            <span>About</span></a></li>
-                    <li><a href="../index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
-                            <span>Resume</span></a></li>
-                    <li><a href="../index.html#portfolio" class="nav-link scrollto active" active><i
-                                class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-                    <li><a href="../index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i>
-                            <span>Services</span></a></li>
-                    <li>
-                        <a href="../index.html#blog" class="nav-link scrollto"><i class="bx bx-link"></i>
-                            <span>Blog</span></a>
-                    </li>
-                    <li><a href="../index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
-                            <span>Contact</span></a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <img
+            src="../assets/img/profile-img.png"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
+          <h1 class="text-light">
+            <a href="../index.html">M. Zaryab Rafique </a>
+          </h1>
+          <div class="social-links mt-3 text-center">
+            <a
+              href="https://www.linkedin.com/in/zaryab-programmer/"
+              target="_blank"
+              class="linkedin"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/zaryab.programmer/"
+              target="_blank"
+              class="instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://github.com/Zaryab-Programmer"
+              target="_blank"
+              class="github"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://twitter.com/zaryab_rafique"
+              class="twitter"
+              target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a
+              href="https://web.facebook.com/Zaryab.Programmer/"
+              target="_blank"
+              class="facebook"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
         </div>
-    </header><!-- End Header -->
+
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li>
+              <a href="../index.html" class="nav-link scrollto"
+                ><i class="bx bx-home"></i> <span>Home</span></a
+              >
+            </li>
+            <li>
+              <a href="../index.html#about" class="nav-link scrollto"
+                ><i class="bx bx-user"></i> <span>About</span></a
+              >
+            </li>
+            <li>
+              <a href="../index.html#resume" class="nav-link scrollto"
+                ><i class="bx bx-file-blank"></i> <span>Resume</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="../index.html#portfolio"
+                class="nav-link scrollto active"
+                active
+                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a href="../index.html#services" class="nav-link scrollto"
+                ><i class="bx bx-server"></i> <span>Services</span></a
+              >
+            </li>
+            <li>
+              <a href="../index.html#nft" class="nav-link scrollto"
+                ><i class="bx bx-plus"></i> <span>NFT</span></a
+              >
+            </li>
+            <li>
+              <a href="../index.html#blog" class="nav-link scrollto"
+                ><i class="bx bx-link"></i> <span>Blog</span></a
+              >
+            </li>
+            <li>
+              <a href="../index.html#contact" class="nav-link scrollto"
+                ><i class="bx bx-envelope"></i> <span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
 
     <main id="main">
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Portfoio Details</h2>
+            <ol>
+              <li><a href="../index.html">Home</a></li>
+              <li>Portfoio Details</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
 
-        <!-- ======= Breadcrumbs ======= -->
-        <section id="breadcrumbs" class="breadcrumbs">
-            <div class="container">
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper-container">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="../assets/img/portfolio/portfolio-5.png" alt="" />
+                  </div>
 
-                <div class="d-flex justify-content-between align-items-center">
-                    <h2>Portfoio Details</h2>
-                    <ol>
-                        <li><a href="../index.html">Home</a></li>
-                        <li>Portfoio Details</li>
-                    </ol>
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/img/portfolio/food-webapp1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/img/portfolio/food-webapp2.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/img/portfolio/food-webapp3.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/img/portfolio/food-webapp4.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/img/portfolio/food-webapp5.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/img/portfolio/food-webapp6.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/img/portfolio/food-webapp7.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../assets/img/portfolio/food-webapp8.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
-        </section><!-- End Breadcrumbs -->
 
-        <!-- ======= Portfolio Details Section ======= -->
-        <section id="portfolio-details" class="portfolio-details">
-            <div class="container">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-8">
-                        <div class="portfolio-details-slider swiper-container">
-                            <div class="swiper-wrapper align-items-center">
-
-                                <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/portfolio-5.png" alt="">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/food-webapp1.png" alt="">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/food-webapp2.png" alt="">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/food-webapp3.png" alt="">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/food-webapp4.png" alt="">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/food-webapp5.png" alt="">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/food-webapp6.png" alt="">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/food-webapp7.png" alt="">
-                                </div>
-
-
-                                <div class="swiper-slide">
-                                    <img src="../assets/img/portfolio/food-webapp8.png" alt="">
-                                </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="portfolio-info">
-                            <h3>Project information</h3>
-                            <ul>
-                                <li><strong>Category</strong>: ASP.NET MVC (Website)</li>
-                                <li><strong>Client</strong>: Semester Project</li>
-                                <li><strong>Project date</strong>: 7 Decemeber, 2020</li>
-                                <li><strong>Project Video URL</strong>: <a
-                                        href="https://www.youtube.com/watch?v=TkHSKbZm1RM" target="_blank">Project
-                                        Video</a></li>
-                                <li><strong>Project Source Code</strong>: <a
-                                        href="https://github.com/Zaryab-Programmer/Food-Web-ASP.Net-MVC"
-                                        target="_blank">Project
-                                        Source Code</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-description">
-                    <h2>FOOD ORDER AND DELIVERY WEBSITE ASP.NET MVC</h2>
-                    <p>
-                        This is a web application of the Food Delivery project developed in Asp.net MVC. Food order and
-                        delivery website that helps the user to order food online and it helps the company
-                        owner to manage their order online, track their progress.</p>
-                    <h5>Functionalities:</h5>
-                    <ol>
-                        <li>Authentication</li>
-                        <li>Admin Side</li>
-                        <li>Customer Side</li>
-                        <li>Optimized Search</li>
-                    </ol>
-                    <h6>Language: C#</h6>
-                    <h6>Database: Microsoft SQL Server</h6>
-                    <h6>Frameworks: .Net, Entity Framework</h6>
-                </div>
-
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: ASP.NET MVC (Website)</li>
+                  <li><strong>Client</strong>: Semester Project</li>
+                  <li><strong>Project date</strong>: 7 Decemeber, 2020</li>
+                  <li>
+                    <strong>Project Video URL</strong>:
+                    <a
+                      href="https://www.youtube.com/watch?v=TkHSKbZm1RM"
+                      target="_blank"
+                      >Project Video</a
+                    >
+                  </li>
+                  <li>
+                    <strong>Project Source Code</strong>:
+                    <a
+                      href="https://github.com/Zaryab-Programmer/Food-Web-ASP.Net-MVC"
+                      target="_blank"
+                      >Project Source Code</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-        </section><!-- End Portfolio Details Section -->
-
-    </main><!-- End #main -->
+          </div>
+          <div class="portfolio-description">
+            <h2>FOOD ORDER AND DELIVERY WEBSITE ASP.NET MVC</h2>
+            <p>
+              This is a web application of the Food Delivery project developed
+              in Asp.net MVC. Food order and delivery website that helps the
+              user to order food online and it helps the company owner to manage
+              their order online, track their progress.
+            </p>
+            <h5>Functionalities:</h5>
+            <ol>
+              <li>Authentication</li>
+              <li>Admin Side</li>
+              <li>Customer Side</li>
+              <li>Optimized Search</li>
+            </ol>
+            <h6>Language: C#</h6>
+            <h6>Database: Microsoft SQL Server</h6>
+            <h6>Frameworks: .Net, Entity Framework</h6>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Details Section -->
+    </main>
+    <!-- End #main -->
 
     <!-- Vendor JS Files -->
     <script src="../assets/vendor/aos/aos.js"></script>
@@ -213,7 +340,5 @@
 
     <!-- Template Main JS File -->
     <script src="../assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
